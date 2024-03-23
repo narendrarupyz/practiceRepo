@@ -19,3 +19,14 @@ for num in num_string:
             odd_num += int_val
 
 print(f"even numer sum is {even_num}, odd number sum is {odd_num}")
+
+#reverse value mathematically
+rev_String=''
+new_String = ''.join(str(v) for v in number_list)
+new_int = int(new_String)
+while new_int > 0:
+    rev = str(new_int % 10)
+    new_int = int(new_int / 10)
+    rev_String = rev_String + rev
+
+print(rev_String)
